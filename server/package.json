@@ -1,0 +1,30 @@
+{
+  "name": "MernTS",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    
+    "start": "node index.ts",
+    "server": "nodemon index.ts",
+    
+    "client-install":"npm install add --prefix client",
+
+
+    "client":"npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  
+  },
+  
+  "dependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "concurrently": "^7.1.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.23",
+    "nodemon": "^2.0.15"
+  }
+}
